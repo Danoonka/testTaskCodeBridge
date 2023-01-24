@@ -5,7 +5,7 @@ import MainPage from "./components/MainPage";
 import {Routes, Route} from 'react-router-dom';
 import DetailPage from "./components/details/DetailPage";
 
-const apiData = getData("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=8e72dab7b1b64a8d85cfe29583de44c6");
+const apiData = getData("https://api.spaceflightnewsapi.net/v3/articles");
 
 function App() {
     const [dataLoad, setDataLoad] = useState(null)

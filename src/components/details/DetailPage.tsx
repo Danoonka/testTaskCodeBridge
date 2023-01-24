@@ -17,7 +17,7 @@ const DetailPage = () => {
     return (
         <Card>
             <CardMedia ref={photoRef}
-                image= {props.urlToImage}
+                image= {props.imageUrl}
                 // image = {zapImg}
                 title= {props.title}
                 sx={{

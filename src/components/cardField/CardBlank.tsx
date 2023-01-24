@@ -21,7 +21,7 @@ const CardBlank = ({props}: any) => {
         }}>
             <CardMedia
                 sx={{ width: 400, height: 217}}
-                image= {props.urlToImage}
+                image= {props.imageUrl}
                 title= {props.title}
 
             />
@@ -71,7 +71,7 @@ const CardBlank = ({props}: any) => {
                     overflow: 'hidden',
                     textOverflow: "ellipsis"
                 }}>
-                    {props.description}
+                    {props.summary}
                 </Typography>
             </CardContent>
             <CardActions>
