@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useEffect, useState} from 'react';
 import './App.css';
+import getData from "./components/utils/getData";
+import MainPage from "./components/MainPage";
+import {Routes, Route} from 'react-router-dom';
+import DetailPage from "./components/details/DetailPage";
+
+const apiData = getData("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=8e72dab7b1b64a8d85cfe29583de44c6");
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [dataLoad, setDataLoad] = useState(null)
+    let data = apiData.read()
+    // let dataLoad = apiData;
+
+    const dataHandler=(childData:any)=>{
+        setDataLoad(childData)
+    }
+
+    useEffect(()=>{
+        setDataLoad(data)
+    })
+
+      return (
+              <div className="App">
+                  <Routes>
+                      <Route path="/" element={ <MainPage dataLoad = {dataLoad} parentCallback={dataHandler}/>}/>
+                      <Route path="/detail" element={ <DetailPage />}/>
+                  </Routes>
+              </div>
+      );
 }
 
 export default App;
