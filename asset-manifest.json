@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/testTaskCodeBridge/static/css/main.31d6cfe0.css",
-    "main.js": "/testTaskCodeBridge/static/js/main.130c4eec.js",
+    "main.js": "/testTaskCodeBridge/static/js/main.f6835f22.js",
     "static/js/787.28cb0dcd.chunk.js": "/testTaskCodeBridge/static/js/787.28cb0dcd.chunk.js",
     "index.html": "/testTaskCodeBridge/index.html",
-    "main.130c4eec.js.map": "/testTaskCodeBridge/static/js/main.130c4eec.js.map",
+    "main.f6835f22.js.map": "/testTaskCodeBridge/static/js/main.f6835f22.js.map",
     "787.28cb0dcd.chunk.js.map": "/testTaskCodeBridge/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.130c4eec.js"
+    "static/js/main.f6835f22.js"
   ]
 }
