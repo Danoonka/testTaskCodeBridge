@@ -23,7 +23,7 @@ function App() {
       return (
               <div className="App">
                   <Routes>
-                      <Route path="/" element={ <MainPage dataLoad = {dataLoad} parentCallback={dataHandler}/>}/>
+                      <Route path="/testTaskCodeBridge" element={ <MainPage dataLoad = {dataLoad} parentCallback={dataHandler}/>}/>
                       <Route path="/detail" element={ <DetailPage />}/>
                   </Routes>
               </div>
